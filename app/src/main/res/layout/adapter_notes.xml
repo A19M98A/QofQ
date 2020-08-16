@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:id="@+id/layoutRoot">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@android:color/holo_blue_bright"
+        android:layout_margin="2dp">
+        <ImageView
+            android:id="@+id/p1Img"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@android:drawable/ic_menu_gallery"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/p1Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 1"/>
+            <TextView
+                android:id="@+id/p1XP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20XP"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V.S"
+            android:layout_weight="1"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/p2Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player 2"/>
+            <TextView
+                android:id="@+id/p2XP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20XP"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/p2Img"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@android:drawable/ic_menu_gallery"/>
+    </LinearLayout>
+
+</LinearLayout>

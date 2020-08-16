@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainPlay"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+            <ImageView
+                android:id="@+id/userimg"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@android:drawable/ic_menu_gallery"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/uname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player Name"
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:id="@+id/uxp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Player Poin"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@android:color/holo_orange_light" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:background="@android:color/holo_green_light">
+            <ImageView
+                android:layout_below="@+id/userimg"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@android:drawable/ic_menu_gallery"/>
+            <TextView
+                android:id="@+id/pname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play Name"/>
+            <Button
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None"/>
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@android:drawable/ic_menu_gallery"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@android:color/holo_orange_light" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lstContent"
+            android:divider="@null"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:src="@android:color/holo_orange_light" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:gravity="center">
+            <Button
+                android:id="@+id/ql"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Questuon List"/>
+            <Button
+                android:id="@+id/add_Q"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Qstion"/>
+            <Button
+                android:id="@+id/exite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exite"/>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
